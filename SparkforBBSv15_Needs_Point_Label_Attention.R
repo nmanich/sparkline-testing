@@ -4,6 +4,12 @@
 # A nod to B.D. Smith's sparkline code https://gist.github.com/bds/759838
 # And Gabriel Foley for help with looping and random bugs
 
+# As of 12/2024 this is abandoned because it got shot down by the publisher
+
+# It did occur to me, the best way to resize these would be to calculate the needed height scale, could be done outside R
+# or at least as a separate process
+# and then pull in a matching table with the recommended height
+
 library(extrafont) # Adding Gill Sans based on its effectiveness at small font sizes
 loadfonts(device="win")
 font_import(pattern = "GIL", prompt = FALSE)  # Import Gill family
